@@ -17,6 +17,9 @@ For a small-sized development environment, the classic architecture will look as
 
 However, for handling more complex pipelines built for handling large amounts of data in production, additional components are likely to be added into your logging architecture, for resiliency (Kafka, RabbitMQ, Redis) and security (nginx):
 
-![image](https://user-images.githubusercontent.com/75883087/165431607-eb92c2c4-f76f-45c0-bc82-a713e1b9b217.png
+![image](https://user-images.githubusercontent.com/75883087/165431607-eb92c2c4-f76f-45c0-bc82-a713e1b9b217.png)
 
 This is a simplified diagram for the sake of illustration. A full production-grade architecture will consist of multiple Elasticsearch nodes, perhaps multiple Logstash instances, an archiving mechanism, an alerting plugin and a full replication across regions or segments of your data center for high availability. You can read a full description of what it takes to deploy ELK as a production-grade log management and analytics solution in the relevant section below.
+
+### Elasticsearch
+Elasticsearch 7.x is much easier to setup since it now ships with Java bundled. Performance improvements include a real memory circuit breaker, improved search performance and a 1-shard policy. In addition, a new cluster coordination layer makes Elasticsearch more scalable and resilient. 
