@@ -34,4 +34,4 @@ Kibana is undergoing some major facelifting with new pages and usability improve
 Beats 7.x conform with the new Elastic Common Schema (ECS) — a new standard for field formatting. Metricbeat supports a new AWS module for pulling data from Amazon CloudWatch, Kinesis and SQS. New modules were introduced in Filebeat and Auditbeat as well.
 
 # Installing ELK
-
+(I will show the twos method to install the ELK Stack: on Ubuntu and on Docker)
