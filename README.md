@@ -35,3 +35,8 @@ Beats 7.x conform with the new Elastic Common Schema (ECS) — a new standard fo
 
 # Installing ELK
 (I will show the twos method to install the ELK Stack: on Ubuntu and on Docker)
+## 1. Install on Linux
+I set up a single Ubuntu 20.04 machine
+### Install Elastic search
+First, you need to add Elastic’s signing key so that the downloaded package can be verified (skip this step if you’ve already installed packages from Elastic):
+`wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -`
