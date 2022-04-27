@@ -11,8 +11,8 @@ ELK Stack provide a simple yet powerful solution for log management and analytic
 
 The various components in the ELK Stack were designed to interact and play nicely with each other without too much extra configuration. However, how you end up designing the stack greatly differs on your environment and use case.
 
-For a small-sized development environment, the classic architecture will look as follows:
-![image](https://user-images.githubusercontent.com/75883087/165431578-6e58e3c8-fd74-41e6-bffb-efc39a0ed5cf.png)
-However, for handling more complex pipelines built for handling large amounts of data in production, additional components are likely to be added into your logging architecture, for resiliency (Kafka, RabbitMQ, Redis) and security (nginx):
-![image](https://user-images.githubusercontent.com/75883087/165431607-eb92c2c4-f76f-45c0-bc82-a713e1b9b217.png)
+For a small-sized development environment, the classic architecture will look as follows:  
+![image](https://user-images.githubusercontent.com/75883087/165431578-6e58e3c8-fd74-41e6-bffb-efc39a0ed5cf.png)  
+However, for handling more complex pipelines built for handling large amounts of data in production, additional components are likely to be added into your logging architecture, for resiliency (Kafka, RabbitMQ, Redis) and security (nginx):  
+![image](https://user-images.githubusercontent.com/75883087/165431607-eb92c2c4-f76f-45c0-bc82-a713e1b9b217.png)  
 This is a simplified diagram for the sake of illustration. A full production-grade architecture will consist of multiple Elasticsearch nodes, perhaps multiple Logstash instances, an archiving mechanism, an alerting plugin and a full replication across regions or segments of your data center for high availability. You can read a full description of what it takes to deploy ELK as a production-grade log management and analytics solution in the relevant section below.
